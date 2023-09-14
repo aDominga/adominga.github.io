@@ -1,0 +1,119 @@
+*{
+    background-color: #FAF5EF;
+    overflow: hidden;   
+}
+
+body{
+    background-color: #FAF5EF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin:0px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    width:100%;
+    border-bottom: 1px solid #010101;
+}
+
+nav > #back{
+    font-size: 100px;
+    color: #010101;
+}
+
+nav > #title{
+    font-size: 25px;
+}
+
+nav > .nav-section {    
+    padding:3rem 2rem;  
+    display:flex;
+    gap:1rem;
+    border-left:#010101;
+}
+
+h1,h2,h3,a,p,span{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color:#010101;
+}
+
+h1 > .about{
+    font-size: 40px;
+}
+
+article > .article-section > p.me{
+    font-size: 20px;
+    display: flex;
+    width: 50%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: visible; 
+    word-break:keep-all;
+    display: block;
+}
+
+
+
+#nav-link-section{
+    flex-basis: calc(100% / 2);
+}
+main{
+    flex-grow:1;
+}
+
+main > article{
+    display:grid;
+    height:100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-image-section > img{
+    width:35vw;
+    height:35vw;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    display: block;
+    bottom:0;
+    padding-top:2em;
+    
+}
+
+main > article > .article-section{
+    height:100%;
+    border: 1px solid #010101;
+}
+
+article > .article-section > .specialword{
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    display: inline;
+    font-size:40px;
+
+}
+
+@media (max-width: 895px) and (min-width:511px){
+    article > .article-section > p.me{
+        font-size: 15px;
+
+    }
+
+    article > .article-section > .specialword{
+        font-size:30px;
+    
+    }
+}
+@media (max-width: 510px) and (min-width:10px){
+    article > .article-section > p.me{
+        font-size: 10px;
+
+    }
+
+    article > .article-section > .specialword{
+        font-size:20px;
+    
+    }
+}

@@ -298,6 +298,12 @@
     .container2{
         height: 100vh;
     }
+    @media (max-width: 2000px) and (min-width:851px){
+        .section2 > img{
+            height:70vh;
+            width:500px;
+        }
+    }
 
 
     @media (max-width: 850px) and (min-width: 651px) {
